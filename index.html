@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1A2B Game</title>
+  <style>
+    /* CSS 直接寫在這裡 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 5px;
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 5px 10px;
+    }
+    .history {
+      margin-top: 20px;
+      text-align: left;
+      display: inline-block;
+    }
+    .message {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>111302037_HW6_1A2B</h1>
+  <input type="text" id="guessInput" maxlength="4" placeholder="請輸入4個不重複的數字！" />
+  <button onclick="checkGuess()">確認</button>
+  <div class="message" id="message"></div>
+  <div class="history">
+    <h2>遊戲紀錄：</h2>
+    <ul id="historyList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
